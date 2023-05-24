@@ -1,0 +1,39 @@
+# Doxyfile Configuration
+
+# Proiect și versiune
+PROJECT_NAME           = "Sistem monitorizare vreme"
+PROJECT_NUMBER         = "1.0"
+
+# Directorul de ieșire pentru documentație
+OUTPUT_DIRECTORY       = doc
+
+# Lista fișierelor și directoarelor incluse în documentație
+INPUT                  = ./ \
+                         ./mainpage.dox
+
+FILE_PATTERNS = [...] *.ino
+EXTENSION_MAPPING = ino=c
+
+# Alte opțiuni de configurare
+
+# Setează extragerea tuturor membrilor și a funcțiilor în documentație
+EXTRACT_ALL            = YES
+
+# Setează recursivitatea pentru includerea subdirectoarelor
+RECURSIVE              = YES
+
+EXCLUDE                = ./proiect_SMP.cpp
+
+# Setează formatul de ieșire a documentației (HTML, LaTeX, etc.)
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+
+# Setează limbajul documentației (limbajul implicit este Engleza)
+OUTPUT_LANGUAGE        = Romanian
+
+# Setează adăugarea de notițe Doxygen în codul sursă
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = YES
+
+# Alte setări și opțiuni specifice proiectului tău

@@ -1,0 +1,42 @@
+/**
+ * @mainpage Sistem monitorizare a vremii
+ *
+ * @section intro_sec Introducere
+ *
+ * Acest proiect implică utilizarea unui Arduino în combinație cu diferite module și senzori pentru a măsura
+ * și afișa date de la un senzor DHT11 și un modul BMP280 pe un ecran LCD.
+ *
+ * @section features_sec Caracteristici
+ *
+ * - Măsurarea temperaturii și umidității utilizând senzorul DHT11.
+ * - Măsurarea presiunii atmosferice și altitudinii utilizând modulul BMP280.
+ * - Afișarea valorilor citite pe un ecran LCD.
+ * - Comunicarea cu un modul Bluetooth HC-05 pentru primirea comenzilor și trimiterea datelor prin intermediul unei aplicații mobile.
+ *
+ * @section usage_sec Utilizare
+ *
+ * - Conectați Arduino la senzorul DHT11, modulul BMP280 și ecranul LCD conform cablajului specificat în cod.
+ * - Încărcați codul pe Arduino.
+ * - Conectați-vă la modulul Bluetooth HC-05 folosind o aplicație mobilă compatibilă.
+ * - Trimiteți comenzile corespunzătoare pentru a solicita afișarea temperaturii, umidității, presiunii sau altitudinii.
+ * - Datele vor fi afișate pe ecranul LCD și transmise prin intermediul modulului Bluetooth către aplicația mobilă.
+ *
+ * @section dependencies_sec Dependințe
+ *
+ * Pentru acest proiect, sunt necesare următoarele biblioteci și module:
+ * - LiquidCrystal: bibliotecă pentru controlul ecranului LCD.
+ * - DHT: bibliotecă pentru comunicarea cu senzorul DHT11.
+ * - Wire: bibliotecă pentru comunicarea I2C cu modulul BMP280.
+ * - Adafruit_Sensor: bibliotecă necesară pentru modulul BMP280.
+ * - Adafruit_BMP280: bibliotecă pentru controlul modulului BMP280.
+ * - SoftwareSerial: bibliotecă pentru comunicarea serială cu modulul Bluetooth HC-05.
+ *
+ * Asigurați-vă că aveți aceste biblioteci instalate în mediul de dezvoltare Arduino.
+ *
+ * @section author_sec Autori
+ * - Ciocan-Merauta Mihai
+ * - Barbieru-Bianca Stefania
+ * - Banica Alexandru Cristian
+ * - Alexandru Maxim
+ * - Putineanu Andrei
+ */

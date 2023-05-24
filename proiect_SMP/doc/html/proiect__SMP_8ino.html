@@ -1,0 +1,572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ro">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sistem monitorizare vreme: Referinţă la fişierul proiect_SMP.ino</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sistem monitorizare vreme<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat de Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Caută');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Se încarcă...</div>
+<div class="SRStatus" id="Searching">Căutare...</div>
+<div class="SRStatus" id="NoMatches">Niciun rezultat</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definiţii</a> &#124;
+<a href="#func-members">Funcţii</a> &#124;
+<a href="#var-members">Variabile</a>  </div>
+  <div class="headertitle"><div class="title">Referinţă la fişierul proiect_SMP.ino</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Proiect pentru citirea datelor de la senzorii DHT11 și BMP280 și afișarea acestora pe un LCD și prin conexiune Bluetooth.  
+<a href="#details">Mai mult...</a></p>
+<div class="textblock"><code>#include &lt;LiquidCrystal.h&gt;</code><br />
+<code>#include &lt;DHT.h&gt;</code><br />
+<code>#include &lt;Wire.h&gt;</code><br />
+<code>#include &lt;Adafruit_Sensor.h&gt;</code><br />
+<code>#include &lt;Adafruit_BMP280.h&gt;</code><br />
+<code>#include &lt;SoftwareSerial.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Definiţii</h2></td></tr>
+<tr class="memitem:a757bb4e2bff6148de6ef3989b32a0126"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#a757bb4e2bff6148de6ef3989b32a0126">DHTPIN</a>&#160;&#160;&#160;7</td></tr>
+<tr class="memdesc:a757bb4e2bff6148de6ef3989b32a0126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pinul digital conectat la senzorul DHT11.  <br /></td></tr>
+<tr class="separator:a757bb4e2bff6148de6ef3989b32a0126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c509dba12bba99883a5be9341b7a0c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#a2c509dba12bba99883a5be9341b7a0c5">DHTTYPE</a>&#160;&#160;&#160;DHT11</td></tr>
+<tr class="memdesc:a2c509dba12bba99883a5be9341b7a0c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tipul de senzor DHT utilizat.  <br /></td></tr>
+<tr class="separator:a2c509dba12bba99883a5be9341b7a0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd1be5675628ccdd1cd809ee995b2e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#a3fd1be5675628ccdd1cd809ee995b2e7">SEALEVELPRESSURE_HPA</a>&#160;&#160;&#160;(1013.25)</td></tr>
+<tr class="memdesc:a3fd1be5675628ccdd1cd809ee995b2e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valoarea presiunii la nivelul mării în unități hPa.  <br /></td></tr>
+<tr class="separator:a3fd1be5675628ccdd1cd809ee995b2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funcţii</h2></td></tr>
+<tr class="memitem:a5ffc6bf825c9eb374d258be1e9e0e50a"><td class="memItemLeft" align="right" valign="top">SoftwareSerial&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#a5ffc6bf825c9eb374d258be1e9e0e50a">bluetooth</a> (8, 9)</td></tr>
+<tr class="memdesc:a5ffc6bf825c9eb374d258be1e9e0e50a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obiect pentru comunicarea serială Bluetooth.  <br /></td></tr>
+<tr class="separator:a5ffc6bf825c9eb374d258be1e9e0e50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a1df263f6f823242a112ec11297434"><td class="memItemLeft" align="right" valign="top">DHT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#ad7a1df263f6f823242a112ec11297434">dht</a> (<a class="el" href="proiect__SMP_8ino.html#a757bb4e2bff6148de6ef3989b32a0126">DHTPIN</a>, <a class="el" href="proiect__SMP_8ino.html#a2c509dba12bba99883a5be9341b7a0c5">DHTTYPE</a>)</td></tr>
+<tr class="memdesc:ad7a1df263f6f823242a112ec11297434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obiect pentru citirea datelor de la senzorul DHT11.  <br /></td></tr>
+<tr class="separator:ad7a1df263f6f823242a112ec11297434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97afdf00af0e116e9b5957f6a470fc2"><td class="memItemLeft" align="right" valign="top">LiquidCrystal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#af97afdf00af0e116e9b5957f6a470fc2">lcd</a> (12, 11, 5, 4, 3, 2)</td></tr>
+<tr class="memdesc:af97afdf00af0e116e9b5957f6a470fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obiect pentru controlul LCD-ului.  <br /></td></tr>
+<tr class="separator:af97afdf00af0e116e9b5957f6a470fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba5283e7ca3efe06e66d25d791c93c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#adba5283e7ca3efe06e66d25d791c93c9">handleBTInterrupt</a> ()</td></tr>
+<tr class="memdesc:adba5283e7ca3efe06e66d25d791c93c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcție pentru tratarea intreruperii Bluetooth.  <br /></td></tr>
+<tr class="separator:adba5283e7ca3efe06e66d25d791c93c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
+<tr class="memdesc:a4fc01d736fe50cf5b977f755b675f11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inițializarea și configurarea componentelor.  <br /></td></tr>
+<tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd053cf3c7b08ee1d9420f8467be059"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#a1bd053cf3c7b08ee1d9420f8467be059">displayTemperatureAndHumidity</a> ()</td></tr>
+<tr class="memdesc:a1bd053cf3c7b08ee1d9420f8467be059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Afișarea temperaturii și umidității pe LCD.  <br /></td></tr>
+<tr class="separator:a1bd053cf3c7b08ee1d9420f8467be059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c744ee075354f0f2acabf5a923c7828"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#a9c744ee075354f0f2acabf5a923c7828">displayPressureAndAltitude</a> ()</td></tr>
+<tr class="memdesc:a9c744ee075354f0f2acabf5a923c7828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Afișarea presiunii și altitudinii pe LCD.  <br /></td></tr>
+<tr class="separator:a9c744ee075354f0f2acabf5a923c7828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#afe461d27b9c48d5921c00d521181f12f">loop</a> ()</td></tr>
+<tr class="memdesc:afe461d27b9c48d5921c00d521181f12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcția principală a programului.  <br /></td></tr>
+<tr class="separator:afe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variabile</h2></td></tr>
+<tr class="memitem:abaf950da15db05e1ecc077a77a6803f7"><td class="memItemLeft" align="right" valign="top">Adafruit_BMP280&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#abaf950da15db05e1ecc077a77a6803f7">bmp</a></td></tr>
+<tr class="memdesc:abaf950da15db05e1ecc077a77a6803f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obiect pentru citirea datelor de la senzorul BMP280.  <br /></td></tr>
+<tr class="separator:abaf950da15db05e1ecc077a77a6803f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1d28cfbce795d6ea954ebe725241f5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#afc1d28cfbce795d6ea954ebe725241f5">temperature</a></td></tr>
+<tr class="memdesc:afc1d28cfbce795d6ea954ebe725241f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variabila pentru temperatura.  <br /></td></tr>
+<tr class="separator:afc1d28cfbce795d6ea954ebe725241f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a87b2b0cff24d38b367ccd34843a206"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#a6a87b2b0cff24d38b367ccd34843a206">humidity</a></td></tr>
+<tr class="memdesc:a6a87b2b0cff24d38b367ccd34843a206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variabila pentru umiditate.  <br /></td></tr>
+<tr class="separator:a6a87b2b0cff24d38b367ccd34843a206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac870e1249bab4a2a68cc4126761d24ef"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#ac870e1249bab4a2a68cc4126761d24ef">pressure</a></td></tr>
+<tr class="memdesc:ac870e1249bab4a2a68cc4126761d24ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variabila pentru presiune.  <br /></td></tr>
+<tr class="separator:ac870e1249bab4a2a68cc4126761d24ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e13a4b4ae0cefdac2a413284239caa6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#a0e13a4b4ae0cefdac2a413284239caa6">altitude</a></td></tr>
+<tr class="memdesc:a0e13a4b4ae0cefdac2a413284239caa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variabila pentru altitudine.  <br /></td></tr>
+<tr class="separator:a0e13a4b4ae0cefdac2a413284239caa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436ddce65e742b9e0fbd3d55927fc112"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#a436ddce65e742b9e0fbd3d55927fc112">type</a></td></tr>
+<tr class="memdesc:a436ddce65e742b9e0fbd3d55927fc112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variabila pentru ciclarea afisarii.  <br /></td></tr>
+<tr class="separator:a436ddce65e742b9e0fbd3d55927fc112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa5a7151443df955719aa3716677d92"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#a9aa5a7151443df955719aa3716677d92">current_command</a></td></tr>
+<tr class="memdesc:a9aa5a7151443df955719aa3716677d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variabila pentru retinerea comenzii curente.  <br /></td></tr>
+<tr class="separator:a9aa5a7151443df955719aa3716677d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a19895c534359a4221f3b11c0406c2f"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proiect__SMP_8ino.html#a4a19895c534359a4221f3b11c0406c2f">commands</a> [4] = {&quot;TEMPERATURE&quot;, &quot;HUMIDITY&quot;, &quot;PRESSURE&quot;, &quot;ALTITUDE&quot;}</td></tr>
+<tr class="memdesc:a4a19895c534359a4221f3b11c0406c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variabila pentru retinerea comenzii curente.  <br /></td></tr>
+<tr class="separator:a4a19895c534359a4221f3b11c0406c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descriere Detaliată</h2>
+<div class="textblock"><p>Proiect pentru citirea datelor de la senzorii DHT11 și BMP280 și afișarea acestora pe un LCD și prin conexiune Bluetooth. </p>
+<p>Acest proiect utilizează un Arduino și modulele DHT11, BMP280 și un modul Bluetooth HC-05 pentru a citi datele de temperatură, umiditate, presiune și altitudine. Aceste date sunt afișate pe un LCD și pot fi transmise prin Bluetooth către o aplicație mobilă.</p>
+<dl class="section note"><dt>Notă</dt><dd>Este necesară instalarea librăriilor Adafruit_Sensor, Adafruit_BMP280, DHT și LiquidCrystal înainte de compilare. </dd></dl>
+</div><h2 class="groupheader">Documentaţia definiţiilor</h2>
+<a id="a757bb4e2bff6148de6ef3989b32a0126" name="a757bb4e2bff6148de6ef3989b32a0126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a757bb4e2bff6148de6ef3989b32a0126">&#9670;&#160;</a></span>DHTPIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DHTPIN&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pinul digital conectat la senzorul DHT11. </p>
+<p>Define-ul DHTPIN specifică numărul pinului digital la care este conectat senzorul DHT11. </p>
+
+</div>
+</div>
+<a id="a2c509dba12bba99883a5be9341b7a0c5" name="a2c509dba12bba99883a5be9341b7a0c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c509dba12bba99883a5be9341b7a0c5">&#9670;&#160;</a></span>DHTTYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DHTTYPE&#160;&#160;&#160;DHT11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tipul de senzor DHT utilizat. </p>
+<p>Define-ul DHTTYPE specifică tipul de senzor DHT utilizat, în acest caz DHT11. </p>
+
+</div>
+</div>
+<a id="a3fd1be5675628ccdd1cd809ee995b2e7" name="a3fd1be5675628ccdd1cd809ee995b2e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fd1be5675628ccdd1cd809ee995b2e7">&#9670;&#160;</a></span>SEALEVELPRESSURE_HPA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SEALEVELPRESSURE_HPA&#160;&#160;&#160;(1013.25)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Valoarea presiunii la nivelul mării în unități hPa. </p>
+<p>Define-ul SEALEVELPRESSURE_HPA specifică valoarea presiunii la nivelul mării în unități hectoPascali (hPa). Această valoare este utilizată în calculul altitudinii în funcție de presiunea citită de la senzorul BMP280. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentaţia funcţiilor</h2>
+<a id="a5ffc6bf825c9eb374d258be1e9e0e50a" name="a5ffc6bf825c9eb374d258be1e9e0e50a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ffc6bf825c9eb374d258be1e9e0e50a">&#9670;&#160;</a></span>bluetooth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SoftwareSerial bluetooth </td>
+          <td>(</td>
+          <td class="paramtype">8&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">9&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obiect pentru comunicarea serială Bluetooth. </p>
+<p>Obiectul bluetooth de tip SoftwareSerial este utilizat pentru a realiza comunicarea cu modulul Bluetooth conectat. Piniile TX și RX sunt specificate ca argumente în constructorul obiectului. </p>
+
+</div>
+</div>
+<a id="ad7a1df263f6f823242a112ec11297434" name="ad7a1df263f6f823242a112ec11297434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a1df263f6f823242a112ec11297434">&#9670;&#160;</a></span>dht()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DHT dht </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="proiect__SMP_8ino.html#a757bb4e2bff6148de6ef3989b32a0126">DHTPIN</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="proiect__SMP_8ino.html#a2c509dba12bba99883a5be9341b7a0c5">DHTTYPE</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obiect pentru citirea datelor de la senzorul DHT11. </p>
+<p>Obiectul dht de tip DHT este utilizat pentru a citi temperatura și umiditatea de la senzorul DHT11. Pinul digital conectat la senzor este specificat ca primul argument în constructorul obiectului, iar tipul senzorului (DHT11) este specificat ca al doilea argument. </p>
+
+</div>
+</div>
+<a id="a9c744ee075354f0f2acabf5a923c7828" name="a9c744ee075354f0f2acabf5a923c7828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c744ee075354f0f2acabf5a923c7828">&#9670;&#160;</a></span>displayPressureAndAltitude()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void displayPressureAndAltitude </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Afișarea presiunii și altitudinii pe LCD. </p>
+<p>Această funcție afișează presiunea și altitudinea pe LCD timp de 3 secunde. După afișarea presiunii și altitudinii, se șterge ecranul LCD și se afișează temperatura. </p>
+
+</div>
+</div>
+<a id="a1bd053cf3c7b08ee1d9420f8467be059" name="a1bd053cf3c7b08ee1d9420f8467be059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bd053cf3c7b08ee1d9420f8467be059">&#9670;&#160;</a></span>displayTemperatureAndHumidity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void displayTemperatureAndHumidity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Afișarea temperaturii și umidității pe LCD. </p>
+<p>Această funcție afișează temperatura și umiditatea pe LCD timp de 3 secunde. </p>
+
+</div>
+</div>
+<a id="adba5283e7ca3efe06e66d25d791c93c9" name="adba5283e7ca3efe06e66d25d791c93c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adba5283e7ca3efe06e66d25d791c93c9">&#9670;&#160;</a></span>handleBTInterrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleBTInterrupt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcție pentru tratarea intreruperii Bluetooth. </p>
+<p>Această funcție este apelată atunci când se primește o comandă prin Bluetooth. Verifică comanda primită și efectuează acțiunile corespunzătoare pentru fiecare comandă. </p>
+
+</div>
+</div>
+<a id="af97afdf00af0e116e9b5957f6a470fc2" name="af97afdf00af0e116e9b5957f6a470fc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97afdf00af0e116e9b5957f6a470fc2">&#9670;&#160;</a></span>lcd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LiquidCrystal lcd </td>
+          <td>(</td>
+          <td class="paramtype">12&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">11&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">5&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">4&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">3&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">2&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obiect pentru controlul LCD-ului. </p>
+<p>Obiectul lcd de tip LiquidCrystal este utilizat pentru a controla afișajul LCD conectat. Pinii pentru controlul LCD (RS, E, D4, D5, D6, D7) sunt specificați ca argumente în constructorul obiectului. </p>
+
+</div>
+</div>
+<a id="afe461d27b9c48d5921c00d521181f12f" name="afe461d27b9c48d5921c00d521181f12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe461d27b9c48d5921c00d521181f12f">&#9670;&#160;</a></span>loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcția principală a programului. </p>
+<p>Această funcție se execută într-un ciclu continuu. Verifică dacă există date disponibile pe conexiunea Bluetooth. Dacă este primită o comandă validă, se apelează funcția <a class="el" href="proiect__SMP_8ino.html#adba5283e7ca3efe06e66d25d791c93c9" title="Funcție pentru tratarea intreruperii Bluetooth.">handleBTInterrupt()</a>. Se alternează între afișarea temperaturii și umidității și afișarea presiunii și altitudinii pe LCD. </p>
+
+</div>
+</div>
+<a id="a4fc01d736fe50cf5b977f755b675f11d" name="a4fc01d736fe50cf5b977f755b675f11d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc01d736fe50cf5b977f755b675f11d">&#9670;&#160;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inițializarea și configurarea componentelor. </p>
+<p>Această funcție se execută o singură dată la pornirea Arduino-ului. Inițializează și configurează modulele DHT11, BMP280, LCD și modulul Bluetooth. Setează pinii de intrare pentru citirea comenzilor Bluetooth. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentaţia variabilelor</h2>
+<a id="a0e13a4b4ae0cefdac2a413284239caa6" name="a0e13a4b4ae0cefdac2a413284239caa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e13a4b4ae0cefdac2a413284239caa6">&#9670;&#160;</a></span>altitude</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float altitude</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variabila pentru altitudine. </p>
+<p>Variabila altitude stochează valoarea altitudinii calculate pe baza presiunii citite de la senzorul BMP280. </p>
+
+</div>
+</div>
+<a id="abaf950da15db05e1ecc077a77a6803f7" name="abaf950da15db05e1ecc077a77a6803f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaf950da15db05e1ecc077a77a6803f7">&#9670;&#160;</a></span>bmp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Adafruit_BMP280 bmp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obiect pentru citirea datelor de la senzorul BMP280. </p>
+<p>Obiectul bmp de tip Adafruit_BMP280 este utilizat pentru a citi temperatura, presiunea și altitudinea de la senzorul BMP280. Adresa I2C implicită a senzorului (0x76) este folosită în constructorul obiectului. </p>
+
+</div>
+</div>
+<a id="a4a19895c534359a4221f3b11c0406c2f" name="a4a19895c534359a4221f3b11c0406c2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a19895c534359a4221f3b11c0406c2f">&#9670;&#160;</a></span>commands</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String commands[4] = {&quot;TEMPERATURE&quot;, &quot;HUMIDITY&quot;, &quot;PRESSURE&quot;, &quot;ALTITUDE&quot;}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variabila pentru retinerea comenzii curente. </p>
+<p>Variabila commands este folosita pentru a determina comenzile valide pe care le poate da utilizatorul. </p>
+
+</div>
+</div>
+<a id="a9aa5a7151443df955719aa3716677d92" name="a9aa5a7151443df955719aa3716677d92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa5a7151443df955719aa3716677d92">&#9670;&#160;</a></span>current_command</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String current_command</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variabila pentru retinerea comenzii curente. </p>
+<p>Variabila current_command este folosita pentru retinerea ultimii comenzi valide date de utilizator. </p>
+
+</div>
+</div>
+<a id="a6a87b2b0cff24d38b367ccd34843a206" name="a6a87b2b0cff24d38b367ccd34843a206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a87b2b0cff24d38b367ccd34843a206">&#9670;&#160;</a></span>humidity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float humidity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variabila pentru umiditate. </p>
+<p>Variabila humidity stochează valoarea umidității citite de la senzorul DHT11. </p>
+
+</div>
+</div>
+<a id="ac870e1249bab4a2a68cc4126761d24ef" name="ac870e1249bab4a2a68cc4126761d24ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac870e1249bab4a2a68cc4126761d24ef">&#9670;&#160;</a></span>pressure</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float pressure</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variabila pentru presiune. </p>
+<p>Variabila pressure stochează valoarea presiunii citite de la senzorul BMP280. </p>
+
+</div>
+</div>
+<a id="afc1d28cfbce795d6ea954ebe725241f5" name="afc1d28cfbce795d6ea954ebe725241f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc1d28cfbce795d6ea954ebe725241f5">&#9670;&#160;</a></span>temperature</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float temperature</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variabila pentru temperatura. </p>
+<p>Variabila temperature stochează valoarea temperaturii citite de la senzorul BMP280. </p>
+
+</div>
+</div>
+<a id="a436ddce65e742b9e0fbd3d55927fc112" name="a436ddce65e742b9e0fbd3d55927fc112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a436ddce65e742b9e0fbd3d55927fc112">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variabila pentru ciclarea afisarii. </p>
+<p>Variabila type este folosita pentru ciclarea intre modurile de afisare a diferitilor senzori. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat de&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
